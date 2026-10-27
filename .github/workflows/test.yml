@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-15-intel, ubuntu-latest, ubuntu-24.04-arm]
+    runs-on: ${{ matrix.os }}
+    steps:
+      # Taps this checkout as tembo/tap.
+      - uses: Homebrew/actions/setup-homebrew@main
+
+      - run: brew style tembo/tap/tembo
+      - run: brew install tembo/tap/tembo
+      - run: brew test tembo/tap/tembo
