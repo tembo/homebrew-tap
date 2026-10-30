@@ -2,27 +2,27 @@
 class Tembo < Formula
   desc "Command-line interface for Tembo"
   homepage "https://www.tembo.io"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      url "https://cli.tembo.sh/releases/v0.1.0/tembo-aarch64-apple-darwin.tar.gz"
-      sha256 "5dc2168147f15671f0eb1fb073a68062bea2c97dbd932c2e2a28f0943f932432"
+      url "https://cli.tembo.sh/releases/v0.2.0/tembo-aarch64-apple-darwin.tar.gz"
+      sha256 "2659b0b4097991dab391663bf55c9680f6c8f88c1f20bc4b2653bce5ce719cae"
     end
     on_intel do
-      url "https://cli.tembo.sh/releases/v0.1.0/tembo-x86_64-apple-darwin.tar.gz"
-      sha256 "726a6e45e63dbfb393848f8115e51551ed4932f73153f1e404ab9bc1e2389620"
+      url "https://cli.tembo.sh/releases/v0.2.0/tembo-x86_64-apple-darwin.tar.gz"
+      sha256 "bd79d58559d665faeeea1ef73e751393187d719153d6562b4f4c94d5d9c6d7ff"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://cli.tembo.sh/releases/v0.1.0/tembo-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e63c7a3ec3b5e31a4a566d8b1febf9ef7ed7399d9dc88a409fda8db3ff72e55e"
+      url "https://cli.tembo.sh/releases/v0.2.0/tembo-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "95164b13b9c7fd685a8ba0f0aae2741d788b9313f693698c97f383344408a13f"
     end
     on_intel do
-      url "https://cli.tembo.sh/releases/v0.1.0/tembo-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "62760f0c6b4eac0eaba12add6a193949fefa25ccbe2bb388ac852e6419f3108d"
+      url "https://cli.tembo.sh/releases/v0.2.0/tembo-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "a99dfe4f0d55d388a8c90f50afe77c49a04545fafb88f835f9c8372c4fd468a2"
     end
   end
 
